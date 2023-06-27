@@ -31,6 +31,16 @@ command! -nargs=0 Rm call ConfirmAndDelete()
 " Press \d to delete current file: 
 nnoremap <leader>d :Rm<CR>
 
+" Use :Cc to pbcopy (whole buffer):
+command! Cc w !xclip -selection clipboard
+" Press \c to pbcopy (whole buffer): 
+nnoremap <leader>c :Cc<CR>
+
+" Use :Cl to pbcopy (selected lines):
+command! -range Cl <line1>,<line2>w !xclip -selection clipboard
+" Press \c to pbcopy (selected lines): 
+vmap <leader>c :Cl<CR>
+
 "menu Encoding.koi8-r :e ++enc=koi8-r ++ff=unix<CR>
 "menu Encoding.windows-1251 :e ++enc=cp1251 ++ff=dos<CR>
 "menu Encoding.cp866 :e ++enc=cp866 ++ff=dos<CR>
