@@ -23,7 +23,7 @@ syntax on
 
 " Use :Rm to delete current file:
 function! ConfirmAndDelete()
-    if confirm("DELETE this file?", "&Yes\n&No") == 1
+    if confirm("DELETE this file?", "&No\n&Yes") == 2
         execute('!rm ' . shellescape(expand('%')))
     else
         echo "Cancelled"
