@@ -1,8 +1,3 @@
-"map <Esc>[5;5~ <Home>
-"map <Esc>[6;5~ <End>
-"map! <Esc>[5;5~ <Home>
-"map! <Esc>[6;5~ <End>
-
 "set nocompatible
 
 colorscheme cobalt
