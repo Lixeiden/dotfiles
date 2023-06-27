@@ -24,7 +24,7 @@ syntax on
 " Use :Rm to delete current file:
 function! ConfirmAndDelete()
     if confirm("DELETE this file?", "&Yes\n&No") == 1
-        execute('!rm %')
+        execute('!rm ' . shellescape(expand('%')))
     else
         echo "Cancelled"
     endif
@@ -42,3 +42,6 @@ nnoremap <leader>c :Cc<CR>
 command! -range Cl <line1>,<line2>w !xclip -selection clipboard
 " Press \c to pbcopy (selected lines): 
 vmap <leader>c :Cl<CR>
+
+" Use :Md5 to calculate md5sum of selected lines
+command! -range=% -nargs=0 Md5 <line1>,<line2>w !md5sum
