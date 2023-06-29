@@ -43,5 +43,10 @@ command! -range Cl <line1>,<line2>w !xclip -selection clipboard
 " Press \c to pbcopy (selected lines): 
 vmap <leader>c :Cl<CR>
 
+" Use :Pp to paste from system clipboard:
+command! Pp r !xclip -o -selection clipboard
+" Press \p to paste from system clipboard:
+nnoremap <leader>p :Pp<CR>
+
 " Use :Md5 to calculate md5sum of selected lines
 command! -range=% -nargs=0 Md5 <line1>,<line2>w !md5sum
