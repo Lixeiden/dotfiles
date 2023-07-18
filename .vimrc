@@ -50,3 +50,16 @@ nnoremap <leader>p :Pp<CR>
 
 " Use :Md5 to calculate md5sum of selected lines
 command! -range=% -nargs=0 Md5 <line1>,<line2>w !md5sum
+
+nnoremap <leader>] :tabnext<CR>
+nnoremap <leader>1 :tabn 1<CR>
+nnoremap <leader>2 :tabn 2<CR>
+nnoremap <leader>3 :tabn 3<CR>
+nnoremap <leader>4 :tabn 4<CR>
+nnoremap <leader>5 :tabn 5<CR>
+nnoremap <leader>6 :tabn 6<CR>
+nnoremap <leader>7 :tabn 7<CR>
+nnoremap <leader>8 :tabn 8<CR>
+nnoremap <leader>9 :tabn 9<CR>
+
+nnoremap <leader>q :q<CR>
