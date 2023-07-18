@@ -66,3 +66,7 @@ nnoremap <leader>q :q<CR>
 
 nnoremap <leader>l :set list!<CR>
 nnoremap <leader>; :set listchars=tab:→\ ,space:␣<CR>
+
+set expandtab
+set tabstop=4
+set shiftwidth=4
