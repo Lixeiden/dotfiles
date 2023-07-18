@@ -63,3 +63,6 @@ nnoremap <leader>8 :tabn 8<CR>
 nnoremap <leader>9 :tabn 9<CR>
 
 nnoremap <leader>q :q<CR>
+
+nnoremap <leader>l :set list!<CR>
+nnoremap <leader>; :set listchars=tab:→\ ,space:␣<CR>
