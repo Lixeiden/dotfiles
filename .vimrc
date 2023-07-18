@@ -70,3 +70,13 @@ nnoremap <leader>; :set listchars=tab:→\ ,space:␣<CR>
 set expandtab
 set tabstop=4
 set shiftwidth=4
+
+function! ToggleColorColumn()
+    if &colorcolumn == ""
+        let &colorcolumn = g:colorcolumn
+    else
+        let &colorcolumn = ""
+    endif
+endfunction
+let g:colorcolumn = "1,5,9,13,17,21,25,29,33,37,41,45,49,53,57,61,65,69,73,77,81,85,89,93,97,101"
+nnoremap <Leader>' :call ToggleColorColumn()<CR>
