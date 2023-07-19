@@ -80,3 +80,5 @@ function! ToggleColorColumn()
 endfunction
 let g:colorcolumn = "1,5,9,13,17,21,25,29,33,37,41,45,49,53,57,61,65,69,73,77,81,85,89,93,97,101"
 nnoremap <Leader>' :call ToggleColorColumn()<CR>
+
+let g:airline#extensions#tabline#enabled = 1
