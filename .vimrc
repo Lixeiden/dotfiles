@@ -86,5 +86,6 @@ let g:airline#extensions#tabline#enabled = 1
 nnoremap <C-Down> gj
 nnoremap <C-Up> gk
 
+set splitright
 nnoremap <leader>z :vsplit \| enew \| windo diffthis<CR>
 nnoremap <leader>x :windo diffoff<CR>
