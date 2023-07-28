@@ -154,3 +154,5 @@ nnoremap <C-Up> gk
 set splitright
 nnoremap <leader>z :vsplit \| enew \| windo diffthis<CR>
 nnoremap <leader>x :windo diffoff<CR>
+
+set cursorline
