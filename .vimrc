@@ -40,7 +40,6 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-airline/vim-airline'
-Plugin 'fatih/vim-go' " You will also need to install all the necessary binaries. vim-go makes it easy to install all of them by providing a command, :GoInstallBinaries, which will go install all the required binaries.
 
 " ~~~~~~~~~~~~~~~ PLUGINS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -62,6 +61,7 @@ filetype plugin indent on    " required
 " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ VUNDLE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 " Plugin 'davidhalter/jedi-vim' " venv only :(
+" Plugin 'fatih/vim-go' " You will also need to install all the necessary binaries. vim-go makes it easy to install all of them by providing a command, :GoInstallBinaries, which will go install all the required binaries.
 
 "menu Encoding.koi8-r :e ++enc=koi8-r ++ff=unix<CR>
 "menu Encoding.windows-1251 :e ++enc=cp1251 ++ff=dos<CR>
