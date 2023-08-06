@@ -138,6 +138,8 @@ set tabstop=4
 set shiftwidth=4
 set autoindent
 
+set t_Co=256
+
 function! ToggleColorColumn()
     if &colorcolumn == ""
         let &colorcolumn = g:colorcolumn
