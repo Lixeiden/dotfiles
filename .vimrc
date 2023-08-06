@@ -75,6 +75,7 @@ filetype plugin indent on    " required
 
 colorscheme cobalt
 highlight Search ctermbg=Red
+nnoremap ,<space> :nohlsearch<CR>
 
 nnoremap O O<Esc>
 nnoremap o o<Esc>
